@@ -17,6 +17,21 @@ Dataset: https://archive.ics.uci.edu/dataset/222/bank+marketing
 
 ---
 
+## 🎯 Business Impact: Why is this Useful?
+
+This model allows the bank to:
+1. **Reduce Marketing Costs** → The bank can avoid calling uninterested customers.
+2. **Improve Efficiency** → Focus on high-potential leads, increasing campaign success rates.
+3. **Enhance Customer Experience** → Avoid spamming uninterested customers.
+4. **Increase Revenue** → More term deposit subscriptions lead to better bank profitability.
+
+### Example Use Case
+- A new customer, **John (35, married, blue-collar, no loans, contacted via cellular, past campaign was a success)** enters the system.
+- The model predicts **John has a 78% chance** of subscribing.
+- The bank **prioritizes calling John**, increasing the likelihood of conversion.
+
+---
+
 ## **📊 Understanding the Dataset**
 The dataset consists of **41,188 customer records** with **20 features**, collected between **May 2008 and November 2010**. The target variable **(`y`)** is **binary**:
 - **"yes"** → The customer subscribed to a term deposit.
@@ -172,19 +187,6 @@ print(f"F1 Score: {f1:.3f}")
 **✅ Precision** → How many of the predicted "yes" were actually correct?
 **✅ Recall** → How many actual "yes" were correctly identified?
 **✅ F1 Score** → A balance between Precision and Recall.
-
-## 🎯 Business Impact: Why is this Useful?
-
-This model allows the bank to:
-1. **Reduce Marketing Costs** → The bank can avoid calling uninterested customers.
-2. **Improve Efficiency** → Focus on high-potential leads, increasing campaign success rates.
-3. **Enhance Customer Experience** → Avoid spamming uninterested customers.
-4. **Increase Revenue** → More term deposit subscriptions lead to better bank profitability.
-
-### Example Use Case
-- A new customer, **John (35, married, blue-collar, no loans, contacted via cellular, past campaign was a success)** enters the system.
-- The model predicts **John has a 78% chance** of subscribing.
-- The bank **prioritizes calling John**, increasing the likelihood of conversion.
 
 ## 🚀 Next Steps
 - **Fine-tune the Model**: Try Random Forest or XGBoost for comparison.
