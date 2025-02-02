@@ -12,6 +12,7 @@ To optimize these efforts, the bank wants to **train a machine learning model** 
 - Improve **conversion rates** and overall campaign efficiency.
 
 The dataset contains **detailed information about customers and their interactions with previous marketing campaigns**, including **demographics, past interactions, and loan history**.
+
 Dataset: https://archive.ics.uci.edu/dataset/222/bank+marketing
 
 ---
