@@ -185,7 +185,9 @@ print(f"F1 Score: {f1:.3f}")
 ```
 
 **✅ Precision** → How many of the predicted "yes" were actually correct?
+
 **✅ Recall** → How many actual "yes" were correctly identified?
+
 **✅ F1 Score** → A balance between Precision and Recall.
 
 ## 🚀 Next Steps
