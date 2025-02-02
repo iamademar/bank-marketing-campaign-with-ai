@@ -3,20 +3,6 @@
 
 ---
 
-## **📌 Background: Why Train the Model?**
-The Portuguese banking institution has been running **direct phone-based marketing campaigns** to encourage customers to **subscribe to term deposits**. However, these campaigns involve **multiple calls per customer**, leading to high operational costs and wasted resources on uninterested clients.
-
-To optimize these efforts, the bank wants to **train a machine learning model** that can predict which customers are **most likely to subscribe to a term deposit**. This prediction will allow the bank to:
-- Focus marketing efforts on **highly interested customers**.
-- Reduce **unnecessary phone calls** and operational costs.
-- Improve **conversion rates** and overall campaign efficiency.
-
-The dataset contains **detailed information about customers and their interactions with previous marketing campaigns**, including **demographics, past interactions, and loan history**.
-
-Dataset: https://archive.ics.uci.edu/dataset/222/bank+marketing
-
----
-
 ## 🎯 Business Impact: Why is this Useful?
 
 This model allows the bank to:
@@ -29,6 +15,20 @@ This model allows the bank to:
 - A new customer, **John (35, married, blue-collar, no loans, contacted via cellular, past campaign was a success)** enters the system.
 - The model predicts **John has a 78% chance** of subscribing.
 - The bank **prioritizes calling John**, increasing the likelihood of conversion.
+
+---
+
+## **📌 Background: Why Train the Model?**
+The Portuguese banking institution has been running **direct phone-based marketing campaigns** to encourage customers to **subscribe to term deposits**. However, these campaigns involve **multiple calls per customer**, leading to high operational costs and wasted resources on uninterested clients.
+
+To optimize these efforts, the bank wants to **train a machine learning model** that can predict which customers are **most likely to subscribe to a term deposit**. This prediction will allow the bank to:
+- Focus marketing efforts on **highly interested customers**.
+- Reduce **unnecessary phone calls** and operational costs.
+- Improve **conversion rates** and overall campaign efficiency.
+
+The dataset contains **detailed information about customers and their interactions with previous marketing campaigns**, including **demographics, past interactions, and loan history**.
+
+Dataset: https://archive.ics.uci.edu/dataset/222/bank+marketing
 
 ---
 
