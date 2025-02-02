@@ -214,7 +214,7 @@ We can create a real-time prediction for Bank Marketing Campaigns. Here's how I 
 #### 🏆 Scenario  
 A **surveyor** is using a **mobile application** during a **field campaign** to gather customer information. 📱  
 
-**📝 Data Collection**  
+- **📝 Data Collection**  
 The surveyor inputs the following details into the app for a new customer, **John**:  
 ✅ **Age:** 35  
 ✅ **Marital Status:** Married  
@@ -224,17 +224,14 @@ The surveyor inputs the following details into the app for a new customer, **Joh
 ✅ **Contact Method:** Cellular  
 ✅ **Outcome of Previous Campaign:** Success  
 
-**⚡ Real-Time Prediction**  
+- **⚡ Real-Time Prediction**  
 📤 Upon submitting John's information, the app **sends a request** to the **Django-based API** hosting the **predictive model**.  
-
 💡 The API **processes the data** and returns a prediction:  
 📊 **Probability of Subscription:** **78%**  
 
-
-**🎯 Actionable Insight**  
+- **🎯 Actionable Insight**  
 🔔 The app displays a notification:  
-**"High likelihood of subscription. Prioritize follow-up with this customer."**  
-
+**"High likelihood of subscription. Prioritize follow-up with this customer."**
 💬 The surveyor, **armed with this insight**, can tailor the conversation to **increase the chances of conversion**.  
 
 
