@@ -56,7 +56,7 @@ The dataset consists of **41,188 customer records** with **20 features**, collec
 
 ---
 
-## **🛠️ Real-World Application of the Code**
+## **🛠️ Code**
 
 ### **Step 1: Load the Dataset**
 ```python
