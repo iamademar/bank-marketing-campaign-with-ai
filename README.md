@@ -11,11 +11,6 @@ This model allows the bank to:
 3. **Enhance Customer Experience** → Avoid spamming uninterested customers.
 4. **Increase Revenue** → More term deposit subscriptions lead to better bank profitability.
 
-### Example Use Case
-- A new customer, **John (35, married, blue-collar, no loans, contacted via cellular, past campaign was a success)** enters the system.
-- The model predicts **John has a 78% chance** of subscribing.
-- The bank **prioritizes calling John**, increasing the likelihood of conversion.
-
 ---
 
 ## **📌 Background: Why Train the Model?**
@@ -136,6 +131,29 @@ history = model.fit(X_train, y_train, epochs=50, batch_size=32, validation_split
 
 ```
 
+The deep learning model used in this script is a **Multi-Layer Perceptron (MLP)**, a type of Artificial Neural Network (ANN). It consists of fully connected (dense) layers and is designed for binary classification.
+
+#### 📌 Why Use This Deep Learning Model for This Dataset?
+
+A Multi-Layer Perceptron (MLP) is used because:
+
+1. Handles Both Categorical & Numerical Data
+  - The dataset includes both categorical (e.g., job, marital status) and numerical (e.g., balance, age) features.
+  - The preprocessing pipeline encodes categorical variables and normalizes numerical values, making it well-suited for an MLP.
+
+2. Captures Complex Patterns
+  - Bank marketing data has non-linear relationships between features.
+  - MLP can detect interactions between variables (e.g., how age + job type + previous campaign success influences customer behavior).
+
+3. Better Than Logistic Regression for Large Datasets
+  - Logistic Regression works well for simple binary classification but struggles with high-dimensional data.
+  - MLP can learn complex decision boundaries from features.
+
+4. Dropout Layers Help Prevent Overfitting
+  - Overfitting is a common issue in marketing datasets.
+  - Dropout (0.5) ensures the model generalizes well to unseen data.
+
+
 ### **Step 3: Train a Deep Learning Model**
 The bank wants to use a neural network to capture complex relationships between customer data and subscription likelihood.
 ```python
@@ -189,6 +207,39 @@ print(f"F1 Score: {f1:.3f}")
 **✅ Recall** → How many actual "yes" were correctly identified?
 
 **✅ F1 Score** → A balance between Precision and Recall.
+
+### 📌 How can we integrated the model we developed?
+We can create a real-time prediction for Bank Marketing Campaigns. Here's how I imagine it would look like.
+
+#### 🏆 Scenario  
+A **surveyor** is using a **mobile application** during a **field campaign** to gather customer information. 📱  
+
+**📝 Data Collection**  
+The surveyor inputs the following details into the app for a new customer, **John**:  
+✅ **Age:** 35  
+✅ **Marital Status:** Married  
+✅ **Job:** Blue-collar  
+✅ **Housing Loan:** No  
+✅ **Personal Loan:** No  
+✅ **Contact Method:** Cellular  
+✅ **Outcome of Previous Campaign:** Success  
+
+**⚡ Real-Time Prediction**  
+📤 Upon submitting John's information, the app **sends a request** to the **Django-based API** hosting the **predictive model**.  
+
+💡 The API **processes the data** and returns a prediction:  
+📊 **Probability of Subscription:** **78%**  
+
+
+**🎯 Actionable Insight**  
+🔔 The app displays a notification:  
+**"High likelihood of subscription. Prioritize follow-up with this customer."**  
+
+💬 The surveyor, **armed with this insight**, can tailor the conversation to **increase the chances of conversion**.  
+
+
+🚀 **With this AI-driven approach, marketing efforts become more efficient, improving success rates while reducing wasted resources!**  
+
 
 ## 🚀 Next Steps
 - **Fine-tune the Model**: Try Random Forest or XGBoost for comparison.
