@@ -215,28 +215,26 @@ We can create a real-time prediction for Bank Marketing Campaigns. Here's how I 
 A **surveyor** is using a **mobile application** during a **field campaign** to gather customer information. 📱  
 
 - **📝 Data Collection**  
-The surveyor inputs the following details into the app for a new customer, **John**:  
-✅ **Age:** 35  
-✅ **Marital Status:** Married  
-✅ **Job:** Blue-collar  
-✅ **Housing Loan:** No  
-✅ **Personal Loan:** No  
-✅ **Contact Method:** Cellular  
-✅ **Outcome of Previous Campaign:** Success  
+  - The surveyor inputs the following details into the app for a new customer, **John**:  
+    ✅ **Age:** 35  
+    ✅ **Marital Status:** Married  
+    ✅ **Job:** Blue-collar  
+    ✅ **Housing Loan:** No  
+    ✅ **Personal Loan:** No  
+    ✅ **Contact Method:** Cellular  
+    ✅ **Outcome of Previous Campaign:** Success  
 
 - **⚡ Real-Time Prediction**  
-📤 Upon submitting John's information, the app **sends a request** to the **Django-based API** hosting the **predictive model**.  
-💡 The API **processes the data** and returns a prediction:  
-📊 **Probability of Subscription:** **78%**  
+  - 📤 Upon submitting John's information, the app **sends a request** to the **Django-based API** hosting the **predictive model**.  
+  - 💡 The API **processes the data** and returns a prediction:  
+  - 📊 **Probability of Subscription:** **78%**  
 
 - **🎯 Actionable Insight**  
-🔔 The app displays a notification:  
-**"High likelihood of subscription. Prioritize follow-up with this customer."**
-💬 The surveyor, **armed with this insight**, can tailor the conversation to **increase the chances of conversion**.  
-
+  - 🔔 The app displays a notification:  
+  - **"High likelihood of subscription. Prioritize follow-up with this customer."**
+  - 💬 The surveyor, **armed with this insight**, can tailor the conversation to **increase the chances of conversion**.  
 
 🚀 **With this AI-driven approach, marketing efforts become more efficient, improving success rates while reducing wasted resources!**  
-
 
 ## 🚀 Next Steps
 - **Fine-tune the Model**: Try Random Forest or XGBoost for comparison.
